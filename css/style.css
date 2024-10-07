@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+.header img {
+  width: 120px;
+}
+.header .header-description h1 {
+  color: #4e6ea0;
+  font-size: 32px;
+}
+.header .header-description h1 span {
+  font-size: 16px;
+}
+.header .header-description h2 {
+  color: #d09491;
+  font-size: 26px;
+}
+.main-content {
+  background-color: #f7cecc;
+  padding: 32px 0;
+  color: #540a0a;
+}
+.main-content .speakers {
+  color: #540a0a;
+  margin-bottom: 32px;
+}
+.main-content .speakers h3 {
+  font-size: 24px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+.main-content .speakers .speakers-block {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 24px;
+}
+.main-content .speakers .speakers-block img {
+  width: 78px;
+  height: 78px;
+}
+.main-content .speakers .speakers-block .speakers-block__description h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.main-content .speakers .speakers-block .speakers-block__description p {
+  color: #500e0e;
+  margin-bottom: 4px;
+}
+.btn-primary-custom {
+  background-color: #f7cecc;
+  color: #540a0a;
+  border: 2px solid #540a0a;
+}
+.about {
+  text-align: center;
+  padding: 32px 0;
+}
+.about h3 {
+  color: #4e6ea0;
+  margin-bottom: 16px;
+}
+.about ul {
+  text-align: left;
+}
+footer {
+  background-color: #f7cecc;
+  color: #540a0a;
+  padding: 32px 0;
+  text-align: center;
+}
+footer .socials {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.alternative .main-content {
+  background-color: #a5a3c5;
+  color: #2a2742;
+}
+.alternative .main-content .speakers {
+  color: #2a2742;
+}
+.alternative .main-content .speakers h3 {
+  color: #2a2742;
+}
+.alternative .main-content .speakers .speakers-block p {
+  color: #2a2742;
+}
+.alternative .main-content .speakers .speakers-block img {
+  border-radius: 50%;
+  border: 3px solid #ce928f;
+}
+.alternative .btn-primary-custom {
+  background-color: #a5a3c5;
+  border-color: #2a2742;
+  color: #2a2742;
+}
+.alternative footer {
+  background-color: #a5a3c5;
+  color: #2a2742;
+}

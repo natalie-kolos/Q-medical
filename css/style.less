@@ -1,0 +1,149 @@
+// main: style.less
+
+@import "vars";
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+
+    @media @breakpoint-mobile-min {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    .header-description {
+        h1 {
+            color: @secondary;
+            font-size: 32px;
+            span{
+                font-size: 16px;
+            }
+        }
+
+        h2 {
+            color: @primary-dark;
+            font-size: 26px;
+        }
+
+    }
+}
+
+.main-content {
+    background-color: @primary;
+    padding: 32px 0;
+    color: @text-primary;
+
+    .speakers {
+        color: @text-primary;
+        margin-bottom: 32px;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 44px;
+            text-align: center;
+        }
+
+        .speakers-block {
+
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            margin-bottom: 24px;
+
+            img {
+                width: 78px;
+                height: 78px;
+            }
+
+            .speakers-block__description {
+                h4 {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: @text-primary-light;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+}
+
+.btn-primary-custom {
+    background-color: @primary;
+    color: @text-primary;
+    border: 2px solid @text-primary;
+}
+
+.about {
+    text-align: center;
+    padding: 32px 0;
+
+    h3 {
+        color: @secondary;
+        margin-bottom: 16px;
+    }
+    ul{
+        text-align: left;
+    }
+}
+
+footer {
+    background-color: @primary;
+    color: @text-primary;
+    padding: 32px 0;
+    text-align: center;
+
+    .socials {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.alternative{
+    .main-content{
+        background-color: @primary-alternative;
+        color: @text-primary-alternative;
+        .speakers {
+            color: @text-primary-alternative;
+            h3{
+                color: @text-primary-alternative;
+            }
+            .speakers-block{
+                p{
+                    color: @text-primary-alternative   
+                }
+                img{
+                    border-radius: 50%;
+                    border: 3px solid #ce928f;
+                }
+            }
+            
+        }
+    }
+
+    .btn-primary-custom{
+        background-color: @primary-alternative;
+        border-color: @text-primary-alternative;
+        color: @text-primary-alternative;
+    }
+    footer{
+        background-color: @primary-alternative;
+        color: @text-primary-alternative;
+    }
+        
+    
+}
