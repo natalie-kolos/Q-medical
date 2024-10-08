@@ -112,3 +112,17 @@ footer .socials {
   background-color: #a5a3c5;
   color: #2a2742;
 }
+.wpcf7-form-control-wrap {
+  margin-bottom: 10px;
+  display: block;
+}
+.wpcf7-form-control-wrap .wpcf7-checkbox {
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 16px;
+  color: #2a2742;
+}
+.wpcf7-form-control-wrap .wpcf7-checkbox .wpcf7-list-item {
+  margin-left: 0;
+  font-size: 14px;
+}
