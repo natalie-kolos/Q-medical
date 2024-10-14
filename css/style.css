@@ -184,3 +184,22 @@ button.first:hover {
   font-size: 14px;
   font-weight: 400;
 }
+button.second {
+  background-color: #a5a3c5;
+  border-color: #2a2742;
+  color: #2a2742;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  box-shadow: none;
+  border-style: solid;
+}
+button.second:hover {
+  background-color: #a5a3c5;
+  border-color: #2a2742;
+  color: #2a2742;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  box-shadow: none;
+  border-style: solid;
+  opacity: 0.9;
+}
